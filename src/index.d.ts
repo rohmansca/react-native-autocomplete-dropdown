@@ -64,6 +64,7 @@ interface AutocompleteDropdownProps {
   EmptyResultComponent?: JSX.Element;
   emptyResultText?: string;
   flatListProps?: FlatListProps<any>
+  LeftIcon?: JSX.Element;
 }
 
 export const AutocompleteDropdown: FC<AutocompleteDropdownProps>;

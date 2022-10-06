@@ -272,6 +272,7 @@ export const AutocompleteDropdown = memo(
           ref={containerRef}
           onLayout={_ => { }}
           style={[styles.inputContainerStyle, props.inputContainerStyle]}>
+          {props.LeftIcon}
           <InputComponent
             ref={inputRef}
             value={searchText}
@@ -365,7 +366,8 @@ const styles = ScaledSheet.create({
     display: 'flex',
     flexDirection: 'row',
     backgroundColor: '#e5ecf2',
-    borderRadius: 5
+    borderRadius: 5,
+    alignItems: 'center'
   },
   Input: {
     flexGrow: 1,
